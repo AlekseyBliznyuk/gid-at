@@ -1,0 +1,98 @@
+{
+  "id": "915ee36a-79c2-4622-9a88-1d86a73d87ad",
+  "version": "2.0",
+  "name": "test",
+  "url": "https://www.aviasales.by",
+  "tests": [{
+    "id": "28a9924f-78f7-490d-9867-373ca0d2fa0b",
+    "name": "threetasks",
+    "commands": [{
+      "id": "b9bbf573-e56d-4d48-9927-0c3ca32ebde4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0d8e4f3-ccd6-4d76-97e2-7995eee0acd1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1222x682",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec07f416-9fa8-41cb-9677-2cfcdb12f412",
+      "comment": "",
+      "command": "click",
+      "target": "id=destination",
+      "targets": [
+        ["id=destination", "id"],
+        ["css=#destination", "css:finder"],
+        ["xpath=//input[@id='destination']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42d7acea-28c5-46b2-ad16-d30405ec5e71",
+      "comment": "",
+      "command": "click",
+      "target": "css=#destination-item-0 span:nth-child(3)",
+      "targets": [
+        ["css=#destination-item-0 span:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='destination-item-0']/div/span/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2916a0d-9b9f-4dfc-8935-d979157ee614",
+      "comment": "",
+      "command": "type",
+      "target": "id=destination",
+      "targets": [
+        ["id=destination", "id"],
+        ["css=#destination", "css:finder"],
+        ["xpath=//input[@id='destination']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "О"
+    }, {
+      "id": "e331bafa-7800-4917-84e3-a72e9e101636",
+      "comment": "",
+      "command": "click",
+      "target": "css=.page-header",
+      "targets": [
+        ["css=.page-header", "css:finder"],
+        ["xpath=//div[2]/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9478d80-d8c8-4a0c-9130-4a00e63d943e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\--top > svg",
+      "targets": [
+        ["css=.\\--top > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "960066a0-245b-437a-9ffc-2f95fe49f103",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text_c6e6819",
+      "targets": [
+        ["css=.text_c6e6819", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1fc012bb-757b-4700-abf1-e566bee421a1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["28a9924f-78f7-490d-9867-373ca0d2fa0b"]
+  }],
+  "urls": ["https://www.aviasales.by/"],
+  "plugins": []
+}
